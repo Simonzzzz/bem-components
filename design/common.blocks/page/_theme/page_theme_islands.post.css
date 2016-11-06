@@ -3,11 +3,20 @@ html {
 }
 
 :block(page):mod(theme islands) {
+
+    $color-base: #000000;
+    $color-essential: #FFFFFF;
+    $color-project: #02B875; /* #FFCC00 一 yandex-project #02B875 一 medium-project #64B2F8 一 twitter-project */
+    $color-ghost: #F6F5F3;
+    $color-source: #007700;
+    $color-radical: #EE0000;
+    $color-external: #00AB6B; /* #4444BB 一 yandex-external #00AB6B 一 medium-external #1A8BF0 一 twitter-external */
+
     font: 13px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
     min-height: 100%;
     margin: 0;
 
-    color: #000;
-    background: #fff;
+    color: $color-base;
+    background: $color-essential;
 }
