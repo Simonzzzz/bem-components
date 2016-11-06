@@ -18,6 +18,7 @@ module.exports = {
                 require('postcss-nested'),
                 require('rebem-css'),
                 require('postcss-url')({ url : 'rebase' }),
+                require('postcss-color-function'),
                 require('autoprefixer')({ browsers : browsers })
             ];
         }
