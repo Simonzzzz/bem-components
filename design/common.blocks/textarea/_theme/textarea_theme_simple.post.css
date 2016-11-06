@@ -1,4 +1,13 @@
 :block(textarea):mod(theme simple) {
+
+    $color-base: #000000;
+    $color-ghost: #F6F5F3;
+    $color-default: #FFFFFF;
+    $color-brand: #224EFF;
+    $color-source: #007700;
+    $color-radical: #EE0000;
+    $color-external: #4444BB;
+
     font-family: inherit;
     font-size: 100%;
 
@@ -10,8 +19,9 @@
 
     cursor: auto;
 
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    background: #fff;
+
+    border: 1px solid color($color-base a(30));
+    background: $color-default;
 
     -webkit-appearance: none;
 
@@ -20,7 +30,7 @@
     }
 
     &:block(textarea):mod(focused) {
-        box-shadow: 0 0 5px 1px #fc0;
+        box-shadow: 0 0 5px 1px $color-brand;
 
         &:focus {
             outline: none;

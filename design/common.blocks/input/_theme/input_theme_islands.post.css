@@ -1,13 +1,14 @@
 :block(input):mod(theme islands) {
+
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
     position: relative;
 
     display: inline-block;
 
-    background: rgba(0, 0, 0, 0.2);
+    background: color($color-base a(20%));
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: $color-base;
 
     /* Decorative element (inner background) */
     &:before {
@@ -19,7 +20,7 @@
 
         content: '';
 
-        background: #fff;
+        background: $color-essential;
     }
 
     :block(input):elem(box) {
@@ -61,13 +62,13 @@
         }
 
         &::-webkit-input-placeholder {
-            color: #999;
+            color: color($color-base w(60%));
             text-indent: 0;
         }
 
         &::-moz-placeholder {
             opacity: 1;
-            color: #999;
+            color: color($color-base w(60%));
         }
 
         &::-ms-clear {
@@ -110,7 +111,7 @@
         z-index: 1;
 
         &:before {
-            box-shadow: 0 0 0 1px #ffcc00, inset 0 0 0 1px #ffcc00;
+            box-shadow: 0 0 0 1px $color-project, inset 0 0 0 1px $color-project; /* */
         }
 
         :block(input):elem(control) {
@@ -119,7 +120,7 @@
     }
 
     &:block(input):mod(disabled) {
-        background: rgba(0, 0, 0, 0.08);
+        background: color($color-base a(8%));
 
         &:before,
         :block(input):elem(clear) {
@@ -128,7 +129,7 @@
 
         :block(input):elem(box),
         :block(input):elem(control) {
-            color: rgba(0, 0, 0, 0.4);
+            color: color($color-base a(4%));
             cursor: default;
         }
     }

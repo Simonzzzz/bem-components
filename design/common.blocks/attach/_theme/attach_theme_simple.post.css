@@ -1,4 +1,4 @@
-:block(attach):mod(theme simple) {
+    :block(attach):mod(theme simple) {
     display: inline-block;
 
     white-space: nowrap;

@@ -1,4 +1,5 @@
 :block(menu-item):mod(theme islands) {
+
     position: relative;
 
     white-space: nowrap;
@@ -18,7 +19,7 @@
     &:block(menu-item):mod(hovered) {
         cursor: pointer;
 
-        background-color: #ffeba0;
+        background-color: color($color-project w(33%));
     }
 
     &:block(menu-item):mod(type link) {

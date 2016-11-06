@@ -1,9 +1,10 @@
 :block(checkbox):mod(theme islands) {
+    
     position: relative; /* fix #1538 */
 
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: $color-essential; 
 
     &:hover {
         cursor: pointer;
@@ -24,7 +25,7 @@
         display: inline-block;
 
         border-radius: 3px;
-        background: rgba(0, 0, 0, 0.2);
+        background: color($color-base a(20%)); 
 
         &:before {
             position: absolute;
@@ -36,7 +37,7 @@
             content: '';
 
             border-radius: 2px;
-            background: #fff;
+            background: $color-essential;
         }
 
         &:after {
@@ -100,10 +101,10 @@
 
     &:block(checkbox):mod(checked) {
         :block(checkbox):elem(box) {
-            background: rgba(153, 122, 0, 0.5);
+            background: color($color-project a(50%) b(20%)); 
 
             &:before {
-                background: #ffeba0;
+                background: color($color-project w(33%)); 
             }
 
             &:after {
@@ -118,27 +119,27 @@
 
     &:block(checkbox):mod(focused) {
         :block(checkbox):elem(box):before {
-            box-shadow: 0 0 0 1px #ffcc00, inset 0 0 0 1px #ffcc00;
+            box-shadow: 0 0 0 1px $color-project, inset 0 0 0 1px $color-project; 
         }
     }
 
     &:block(checkbox):mod(hovered) {
         :block(checkbox):elem(box) {
-            background: rgba(0, 0, 0, 0.3);
+            background: color($color-base a(30%)); 
         }
 
         &:block(checkbox):mod(checked) :block(checkbox):elem(box) {
-            background: rgba(129, 103, 0, 0.6);
+            background: color($color-project a(60%) b(25%)); 
         }
     }
 
     &:block(checkbox):mod(disabled) {
         cursor: default;
 
-        color: #999;
+        color: color($color-base w(60%)); 
 
         :block(checkbox):elem(box) {
-            background: rgba(0, 0, 0, 0.08);
+            background: color($color-base a(8%)); 
 
             &:before {
                 display: none;
@@ -146,7 +147,7 @@
         }
 
         &:block(checkbox):mod(checked) :block(checkbox):elem(box) {
-            background: rgba(0, 0, 0, 0.15);
+            background: color($color-base a(15%)); 
 
             &:after {
                 opacity: 0.4;

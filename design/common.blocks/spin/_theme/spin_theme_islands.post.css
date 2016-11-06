@@ -1,4 +1,5 @@
 :block(spin):mod(theme islands) {
+
     position: absolute;
 
     display: inline-block;
@@ -24,7 +25,7 @@
         background: 0 0 no-repeat url(spin_theme_islands.gif);
 
         /* `1deg` is needed to prevent FF bug after minification (`0deg` => `0`) */
-        background: linear-gradient(1deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+        background: linear-gradient(1deg, $color-essential, $color-essential);
 
         backface-visibility: hidden; /* Accelerate animation */
     }
@@ -49,13 +50,13 @@
 
 @keyframes spin_theme_islands {
     from {
-        border-top-color: #fc0;
-        border-left-color: #fc0;
+        border-top-color: $color-project;
+        border-left-color: $color-project;
         transform: rotate(0);
     }
     to {
-        border-top-color: #fc0;
-        border-left-color: #fc0;
+        border-top-color: $color-project;
+        border-left-color: $color-project;
         transform: rotate(360deg);
     }
 }

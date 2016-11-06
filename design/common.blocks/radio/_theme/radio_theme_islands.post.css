@@ -1,7 +1,8 @@
 :block(radio):mod(theme islands) {
+
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: $color-base;
 
     &:hover {
         cursor: pointer;
@@ -22,7 +23,7 @@
         display: inline-block;
 
         border-radius: 50%;
-        background: rgba(0, 0, 0, 0.2);
+        background: color($color-base a(20%));
 
         &:before {
             position: absolute;
@@ -34,7 +35,7 @@
             content: '';
 
             border-radius: 50%;
-            background: #fff;
+            background: $color-essential;
         }
     }
 
@@ -84,17 +85,17 @@
 
     &:block(radio):mod(checked) {
         :block(radio):elem(box) {
-            background: rgba(153, 122, 0, 0.5);
+            background: color($color-project a(50%) w(33%));
 
             &:before {
-                background: #ffeba0;
+                background: color($color-project w(33%));
             }
 
             &:after {
                 position: absolute;
 
                 border-radius: 50%;
-                background: #000;
+                background: $color-base;
 
                 content: '';
             }
@@ -103,30 +104,30 @@
 
     &:block(radio):mod(focused) {
         :block(radio):elem(box):before {
-            box-shadow: 0 0 0 1px #ffcc00, inset 0 0 0 1px #ffcc00;
+            box-shadow: 0 0 0 1px $color-project, inset 0 0 0 1px $color-project;
         }
     }
 
     &:block(radio):mod(hovered) {
         :block(radio):elem(box) {
-           background: rgba(0, 0, 0, 0.3);
+           background: color($color-base a(30%));
         }
 
         &:block(radio):mod(checked) :block(radio):elem(box) {
-           background: rgba(129, 103, 0, 0.6);
+           background: color($color-project a(60%) b(25%));
         }
     }
 
     &:block(radio):mod(disabled) {
         cursor: default;
 
-        color: #999;
+        color: color($color-base w(60%));
 
         :block(radio):elem(box) {
-            background: rgba(0, 0, 0, 0.08);
+            background: color($color-base a(8%));
 
             :block(radio):mod(checked)& {
-                background: rgba(0, 0, 0, 0.15);
+                background: color($color-base a(15%));
             }
 
             &:before {
@@ -134,7 +135,7 @@
             }
 
             &:after {
-                background: rgba(0, 0, 0, 0.4);
+                background: color($color-base a(40%));
             }
         }
     }

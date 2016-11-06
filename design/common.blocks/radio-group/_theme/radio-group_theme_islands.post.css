@@ -1,4 +1,5 @@
 :block(radio-group):mod(theme islands) {
+    
     display: inline-block;
 
     &:block(radio-group):mod(size m) {

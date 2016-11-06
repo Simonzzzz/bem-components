@@ -1,4 +1,5 @@
 :block(checkbox-group):mod(theme islands) {
+    
     display: inline-block;
 
     &:block(checkbox-group):mod(size m) {

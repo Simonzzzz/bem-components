@@ -1,29 +1,30 @@
 :block(link):mod(theme islands) {
+
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #04b;
+    color: $color-external;
     cursor: pointer;
     transition: color 0.15s ease-out;
     text-decoration: none;
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    -webkit-tap-highlight-color: color($color-base a(10%)); /* alpha($base, 10%) */
 
     &:block(link):mod(view minor) {
-        color: #669;
+        color: color($color-external s(20%)); /* saturation($link, 20%) */
     }
 
     &:block(link):mod(view external) {
-        color: #070;
+        color: $color-source; /* $active */
     }
 
     &:block(link):mod(view ghost) {
-        color: #999;
+        color: color($color-base w(60%)); 
         &:hover {
-            color: #000;
+            color: $color-base; /* $base */
         }
     }
 
     &:block(link):mod(view text) {
-        color: #000;
+        color: $color-base; /* $base */
     }
 
     &:block(link):mod(view strong) {
@@ -31,7 +32,7 @@
     }
 
     &:hover {
-        color: #e00;
+        color: $color-radical; /* $alert */
     }
 
     @each $size, $val in (s, m, l, xl), (13px, 13px, 15px, 18px) {
@@ -41,6 +42,6 @@
     }
 
     &:block(link):mod(disabled) {
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: $color-base;
     }
 }

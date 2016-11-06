@@ -1,9 +1,12 @@
 :block(menu):mod(theme simple) {
+
+    @import "../../design/theme/_custom/theme_custom_colors.post.css";
+
     outline: 0;
 
     &:block(menu):mod(focused) {
-        border-color: rgba(0, 0, 0, 0.2);
-        box-shadow: 0 0 5px 1px #fc0;
+        border-color: color($color-base a(20%));
+        box-shadow: 0 0 5px 1px #fc0 $color-brand;
     }
 
     :block(menu):elem(group-title) {
