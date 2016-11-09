@@ -62,13 +62,13 @@
         }
 
         &::-webkit-input-placeholder {
-            color: color($color-base w(60%));
+            color: color($color-base l(+60%));
             text-indent: 0;
         }
 
         &::-moz-placeholder {
             opacity: 1;
-            color: color($color-base w(60%));
+            color: color($color-base l(+60%));
         }
 
         &::-ms-clear {

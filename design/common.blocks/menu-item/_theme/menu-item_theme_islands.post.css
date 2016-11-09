@@ -19,7 +19,7 @@
     &:block(menu-item):mod(hovered) {
         cursor: pointer;
 
-        background-color: color($color-project w(33%));
+        background-color: color($color-project l(+33%));
     }
 
     &:block(menu-item):mod(type link) {

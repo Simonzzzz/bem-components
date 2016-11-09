@@ -6,25 +6,25 @@
     transition: color 0.15s ease-out;
     text-decoration: none;
 
-    -webkit-tap-highlight-color: color($color-base a(10%)); /* alpha($base, 10%) */
+    -webkit-tap-highlight-color: color($color-base a(10%)); 
 
     &:block(link):mod(view minor) {
-        color: color($color-external s(20%)); /* saturation($link, 20%) */
+        color: color($color-external s(20%)); 
     }
 
     &:block(link):mod(view external) {
-        color: $color-source; /* $active */
+        color: $color-source; 
     }
 
     &:block(link):mod(view ghost) {
-        color: color($color-base w(60%)); 
+        color: color($color-base l(+60%)); 
         &:hover {
-            color: $color-base; /* $base */
+            color: $color-base; 
         }
     }
 
     &:block(link):mod(view text) {
-        color: $color-base; /* $base */
+        color: $color-base; 
     }
 
     &:block(link):mod(view strong) {
@@ -32,7 +32,7 @@
     }
 
     &:hover {
-        color: $color-radical; /* $alert */
+        color: $color-radical; 
     }
 
     @each $size, $val in (s, m, l, xl), (13px, 13px, 15px, 18px) {

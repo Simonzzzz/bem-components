@@ -101,10 +101,10 @@
 
     &:block(checkbox):mod(checked) {
         :block(checkbox):elem(box) {
-            background: color($color-project a(50%) b(20%)); 
+            background: color($color-project a(50%) l(-20%)); 
 
             &:before {
-                background: color($color-project w(33%)); 
+                background: color($color-project l(+33%)); 
             }
 
             &:after {
@@ -129,14 +129,14 @@
         }
 
         &:block(checkbox):mod(checked) :block(checkbox):elem(box) {
-            background: color($color-project a(60%) b(25%)); 
+            background: color($color-project a(60%) l(-25%)); 
         }
     }
 
     &:block(checkbox):mod(disabled) {
         cursor: default;
 
-        color: color($color-base w(60%)); 
+        color: color($color-base l(+60%)); 
 
         :block(checkbox):elem(box) {
             background: color($color-base a(8%)); 

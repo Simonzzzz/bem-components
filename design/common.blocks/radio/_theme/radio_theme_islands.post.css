@@ -85,10 +85,10 @@
 
     &:block(radio):mod(checked) {
         :block(radio):elem(box) {
-            background: color($color-project a(50%) w(33%));
+            background: color($color-project a(50%) l(+33%));
 
             &:before {
-                background: color($color-project w(33%));
+                background: color($color-project l(+33%));
             }
 
             &:after {
@@ -114,14 +114,14 @@
         }
 
         &:block(radio):mod(checked) :block(radio):elem(box) {
-           background: color($color-project a(60%) b(25%));
+           background: color($color-project a(60%) l(-25%));
         }
     }
 
     &:block(radio):mod(disabled) {
         cursor: default;
 
-        color: color($color-base w(60%));
+        color: color($color-base l(+60%));
 
         :block(radio):elem(box) {
             background: color($color-base a(8%));

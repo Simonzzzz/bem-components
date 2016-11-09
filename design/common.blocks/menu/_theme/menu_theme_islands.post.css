@@ -55,7 +55,7 @@
         border-width: 1px 0;
 
         &-title {
-            color: color($color-base w(60%));
+            color: color($color-base l(+60%));
 
         }
 

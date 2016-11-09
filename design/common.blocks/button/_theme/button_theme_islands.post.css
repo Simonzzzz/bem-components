@@ -69,7 +69,7 @@
     &:block(button):mod(focused-hard) {
         z-index: 1;
 
-        background: color($color-project a(60%) b(15%));
+        background: color($color-project a(60%) l(-15%));
 
         &:block(button):before {
             box-shadow: 0 0 0 1px $color-project, inset 0 0 0 1px $color-project;
@@ -81,22 +81,22 @@
     }
 
     &:block(button):mod(checked) {
-        background: color($color-project a(50%) b(20%));
+        background: color($color-project a(50%) l(-20%));
 
         &:before {
-            background: color($color-project w(33%)); 
+            background: color($color-project l(+33%)); 
         }
 
         &:block(button):mod(pressed) {
-            background: color($color-project a(60%) b(25%)); /* alpha(darken($color-project, 25), 60%) */
+            background: color($color-project a(60%) l(-25%)); 
 
             &:before {
-                background: color($color-project w(25%)); /* alpha(lighten($color-project, 25), 100%) */
+                background: color($color-project l+(25%));
             }
         }
 
         &:block(button):mod(hovered) {
-            background: color($color-project a(60%) b(25%)); /* alpha(darken($color-project, 25), 60%) */
+            background: color($color-project a(60%) l(-25%));
         }
     }
 
@@ -108,10 +108,10 @@
         }
 
         &:block(button):mod(checked) {
-            background: color($color-project w(33%));
+            background: color($color-project l(+33%));
 
             &:block(button):mod(pressed) {
-                background: color($color-project w(25%));
+                background: color($color-project l(+25%));
             }
         }
 
@@ -121,14 +121,14 @@
     }
 
     &:block(button):mod(view action) {
-        background: color($color-project w(15%));
+        background: color($color-project l(+15%));
 
         &:before {
             display: none;
         }
 
         &:block(button):mod(hovered) {
-            background: color($color-project w(19%)); 
+            background: color($color-project l(+19%)); 
         }
 
         &:block(button):mod(pressed) {
@@ -163,16 +163,16 @@
         &:block(button):mod(checked) {
             &:before {
                 background: color($color-project w(33%));
-                box-shadow: 0 0 0 1px color($color-project a(50%) b(20%));
+                box-shadow: 0 0 0 1px color($color-project a(50%) l(+20%));
             }
 
             &:block(button):mod(hovered):before {
-                box-shadow: 0 0 0 1px color($color-project a(60%) b(25%));
+                box-shadow: 0 0 0 1px color($color-project a(60%) l(+25%));
             }
 
             &:block(button):mod(pressed):before {
-                background: color($color-project l(25%));
-                box-shadow: 0 0 0 1px color($color-project a(60%) b(25%));
+                background: color($color-project l(+25%));
+                box-shadow: 0 0 0 1px color($color-project a(60%) l(+25%));
             }
         }
     }
@@ -185,11 +185,11 @@
         }
 
         &:block(button):mod(checked) {
-            background: color($color-project l(33%));
+            background: color($color-project l(+33%));
         }
 
         :block(button):elem(text) {
-            color: color($color-project l(67%));
+            color: color($color-project l(+67%));
         }
 
         :block(icon) {
@@ -260,11 +260,11 @@
 
 @keyframes button-action-focus {
     from {
-        background-color: #ffdb4d;
+        background-color: $color-project l(+15%);
     }
 
     to {
-        background-color: #fc0;
+        background-color: $color-project;
     }
 }
 

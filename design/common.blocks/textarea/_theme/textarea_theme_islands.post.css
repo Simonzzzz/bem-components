@@ -24,7 +24,7 @@
 
     &::-moz-placeholder {
         opacity: 1;
-        color: color($color-base w(60%));
+        color: color($color-base l(+60%));
     }
 
     &:block(textarea):mod(focused) {
