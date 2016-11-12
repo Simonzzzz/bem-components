@@ -2,7 +2,7 @@
 
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-    -webkit-tap-highlight-color: $color-base;
+    -webkit-tap-highlight-color: $color-border;
 
     &:hover {
         cursor: pointer;
@@ -23,7 +23,7 @@
         display: inline-block;
 
         border-radius: 50%;
-        background: color($color-base a(20%));
+        background: $color-border;
 
         &:before {
             position: absolute;
@@ -35,7 +35,7 @@
             content: '';
 
             border-radius: 50%;
-            background: $color-essential;
+            background: $color-default;
         }
     }
 
@@ -85,17 +85,17 @@
 
     &:block(radio):mod(checked) {
         :block(radio):elem(box) {
-            background: color($color-project a(50%) l(+33%));
+            background: $color-border-check;
 
             &:before {
-                background: color($color-project l(+33%));
+                background: $color-check;
             }
 
             &:after {
                 position: absolute;
 
                 border-radius: 50%;
-                background: $color-base;
+                background: $color-inverse;
 
                 content: '';
             }
@@ -104,30 +104,30 @@
 
     &:block(radio):mod(focused) {
         :block(radio):elem(box):before {
-            box-shadow: 0 0 0 1px $color-project, inset 0 0 0 1px $color-project;
+            box-shadow: 0 0 0 1px $color-border-focus, inset 0 0 0 1px $color-border-focus;
         }
     }
 
     &:block(radio):mod(hovered) {
         :block(radio):elem(box) {
-           background: color($color-base a(30%));
+           background: $color-border-hover;
         }
 
         &:block(radio):mod(checked) :block(radio):elem(box) {
-           background: color($color-project a(60%) l(-25%));
+           background: $color-border-check-hover;
         }
     }
 
     &:block(radio):mod(disabled) {
         cursor: default;
 
-        color: color($color-base l(+60%));
+        color: $color-typo-disable;
 
         :block(radio):elem(box) {
-            background: color($color-base a(8%));
+            background: $color-disable;
 
-            :block(radio):mod(checked)& {
-                background: color($color-base a(15%));
+            :block(radio):mod(checked) {
+                background: $color-disable-check;
             }
 
             &:before {
@@ -135,7 +135,7 @@
             }
 
             &:after {
-                background: color($color-base a(40%));
+                background: $color-typo-inverse-disable;
             }
         }
     }

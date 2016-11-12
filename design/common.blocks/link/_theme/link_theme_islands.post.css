@@ -1,15 +1,15 @@
 :block(link):mod(theme islands) {
 
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: $color-external;
+    color: $color-typo-link;
     cursor: pointer;
     transition: color 0.15s ease-out;
     text-decoration: none;
 
-    -webkit-tap-highlight-color: color($color-base a(10%)); 
+    -webkit-tap-highlight-color: $color-typo-link-hover; 
 
     &:block(link):mod(view minor) {
-        color: color($color-external s(20%)); 
+        color: $color-typo-link-hover; 
     }
 
     &:block(link):mod(view external) {
@@ -17,14 +17,14 @@
     }
 
     &:block(link):mod(view ghost) {
-        color: color($color-base l(+60%)); 
+        color: $color-typo-link-ghost; 
         &:hover {
-            color: $color-base; 
+            color: $color-typo-link-ghost-hover 
         }
     }
 
     &:block(link):mod(view text) {
-        color: $color-base; 
+        color: $color-typo-primary; 
     }
 
     &:block(link):mod(view strong) {
@@ -32,7 +32,7 @@
     }
 
     &:hover {
-        color: $color-radical; 
+        color: $color-typo-link-hover; 
     }
 
     @each $size, $val in (s, m, l, xl), (13px, 13px, 15px, 18px) {

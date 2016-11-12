@@ -8,7 +8,7 @@
     animation-duration: 0.1s;
     animation-timing-function: ease-out;
 
-    background: $color-essential;
+    background: $color-default;
     box-shadow: 0 0 0 1px color($color-base a(10%)),
                 0 10px 20px -5px color($color-base a(40%));
 

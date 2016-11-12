@@ -4,7 +4,7 @@
 
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-    -webkit-tap-highlight-color: $color-essential; 
+    -webkit-tap-highlight-color: $color-typo-primary; 
 
     &:hover {
         cursor: pointer;
@@ -25,7 +25,7 @@
         display: inline-block;
 
         border-radius: 3px;
-        background: color($color-base a(20%)); 
+        background: $color-border; 
 
         &:before {
             position: absolute;
@@ -37,7 +37,7 @@
             content: '';
 
             border-radius: 2px;
-            background: $color-essential;
+            background: $color-default;
         }
 
         &:after {
@@ -101,10 +101,10 @@
 
     &:block(checkbox):mod(checked) {
         :block(checkbox):elem(box) {
-            background: color($color-project a(50%) l(-20%)); 
+            background: $color-border-check; 
 
             &:before {
-                background: color($color-project l(+33%)); 
+                background: $color-check; 
             }
 
             &:after {
@@ -119,27 +119,27 @@
 
     &:block(checkbox):mod(focused) {
         :block(checkbox):elem(box):before {
-            box-shadow: 0 0 0 1px $color-project, inset 0 0 0 1px $color-project; 
+            box-shadow: 0 0 0 1px $color-border-focus, inset 0 0 0 1px $color-border-focus; 
         }
     }
 
     &:block(checkbox):mod(hovered) {
         :block(checkbox):elem(box) {
-            background: color($color-base a(30%)); 
+            background: $color-border-hover; 
         }
 
         &:block(checkbox):mod(checked) :block(checkbox):elem(box) {
-            background: color($color-project a(60%) l(-25%)); 
+            background: $color-border-check-hover; 
         }
     }
 
     &:block(checkbox):mod(disabled) {
         cursor: default;
 
-        color: color($color-base l(+60%)); 
+        color: $color-typo-disable; 
 
         :block(checkbox):elem(box) {
-            background: color($color-base a(8%)); 
+            background: $color-disable; 
 
             &:before {
                 display: none;
@@ -147,7 +147,7 @@
         }
 
         &:block(checkbox):mod(checked) :block(checkbox):elem(box) {
-            background: color($color-base a(15%)); 
+            background: $color-disable-check; 
 
             &:after {
                 opacity: 0.4;

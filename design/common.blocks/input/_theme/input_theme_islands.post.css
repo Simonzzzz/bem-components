@@ -6,9 +6,9 @@
 
     display: inline-block;
 
-    background: color($color-base a(20%));
+    background: $color-border;
 
-    -webkit-tap-highlight-color: $color-base;
+    -webkit-tap-highlight-color: $color-border-hover;
 
     /* Decorative element (inner background) */
     &:before {
@@ -20,7 +20,7 @@
 
         content: '';
 
-        background: $color-essential;
+        background: $color-default;
     }
 
     :block(input):elem(box) {
@@ -62,13 +62,13 @@
         }
 
         &::-webkit-input-placeholder {
-            color: color($color-base l(+60%));
+            color: $color-typo-placeholder;
             text-indent: 0;
         }
 
         &::-moz-placeholder {
             opacity: 1;
-            color: color($color-base l(+60%));
+            color: $color-typo-placeholder;
         }
 
         &::-ms-clear {
@@ -111,7 +111,7 @@
         z-index: 1;
 
         &:before {
-            box-shadow: 0 0 0 1px $color-project, inset 0 0 0 1px $color-project; /* */
+            box-shadow: 0 0 0 1px $color-border-focus, inset 0 0 0 1px $color-border-focus; /* */
         }
 
         :block(input):elem(control) {
@@ -120,7 +120,7 @@
     }
 
     &:block(input):mod(disabled) {
-        background: color($color-base a(8%));
+        background: $color-border-disable;
 
         &:before,
         :block(input):elem(clear) {
@@ -129,7 +129,7 @@
 
         :block(input):elem(box),
         :block(input):elem(control) {
-            color: color($color-base a(4%));
+            color: $color-disable; 
             cursor: default;
         }
     }

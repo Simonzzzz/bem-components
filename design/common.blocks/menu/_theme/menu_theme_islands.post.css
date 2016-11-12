@@ -7,7 +7,7 @@
     user-select: none;
 
     outline: 0;
-    background: $color-essential;
+    background: $color-default;
 
     -webkit-tap-highlight-color: $color-base;
 
@@ -51,11 +51,11 @@
     }
 
     :block(menu):elem(group) {
-        border: 1px solid color($color-base a(10%));
+        border: 1px solid  $color-border;
         border-width: 1px 0;
 
         &-title {
-            color: color($color-base l(+60%));
+            color: $color-typo-primary;
 
         }
 

@@ -4,32 +4,32 @@
 
     display: inline-block;
 
-    background: $color-essential;
+    background: $color-default;
 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     min-height: 2em;
 
-    border: 1px solid color($color-base a(20%));
+    border: 1px solid $color-border;
     outline: none;
 
     -webkit-appearance: none;
-    -webkit-tap-highlight-color: $color-base;
+    -webkit-tap-highlight-color: $color-typo-primary;
 
     &::-webkit-input-placeholder {
-        color: color($color-base a(20%));
+        color: $color-border;
         text-indent: 0;
     }
 
     &::-moz-placeholder {
         opacity: 1;
-        color: color($color-base l(+60%));
+        color: $color-typo-placeholder;
     }
 
     &:block(textarea):mod(focused) {
-        border-color: $color-project;
-        box-shadow: 0 0 0 1px $color-project;
+        border-color: $color-border-focus;
+        box-shadow: 0 0 0 1px $color-border-focus;
     }
 
     &:block(textarea):mod(width available) {
@@ -42,36 +42,32 @@
         resize: none;
         cursor: default;
 
-        color: color($color-base a(40%));
+        color: $color-typo-disable;
         border-color: transparent;
-        background: color($color-project a(8%));
+        background: $color-disable; /*       */
     }
 
     &:block(textarea):mod(size s) {
         font-size: 13px;
         line-height: 16px;
-
         padding-left: 6px;
     }
 
     &:block(textarea):mod(size m) {
         font-size: 13px;
         line-height: 18px;
-
         padding: 3px 5px;
     }
 
     &:block(textarea):mod(size l) {
         font-size: 15px;
         line-height: 20px;
-
         padding: 5px 7px;
     }
 
     &:block(textarea):mod(size xl) {
         font-size: 18px;
         line-height: 22px;
-
         padding-left: 11px;
     }
 }

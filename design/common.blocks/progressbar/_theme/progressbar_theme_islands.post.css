@@ -5,6 +5,6 @@
     :block(progressbar):elem(bar) {
         height: 2px;
 
-        background: $color-project;
+        background: $color-border-focus;
     }
 }
