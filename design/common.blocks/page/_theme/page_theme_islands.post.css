@@ -62,11 +62,11 @@ html {
 
 
     /* Link */
-    $color-typo-link:               $color-external;
-    $color-typo-link-hover:         $color-radical;
-    $color-typo-link-ghost:         $color-ghost;
-    $color-typo-link-ghost-hover:   color($color-ghost l(-10));
-    $color-typo-link-visited:       color($color-external s(10%)); /* #b40eb4 */
+    $color-link:               $color-external;
+    $color-link-hover:         $color-radical;
+    $color-link-ghost:         $color-ghost;
+    $color-link-ghost-hover:   color($color-ghost l(-10));
+    $color-link-visited:       color($color-external s(10%)); /* #b40eb4 */
 
 
     font: 13px 'Helvetica Neue', Helvetica, Arial, sans-serif;
