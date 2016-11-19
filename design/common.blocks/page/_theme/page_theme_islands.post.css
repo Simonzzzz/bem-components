@@ -11,12 +11,7 @@ html {
     $color-ghost: #F6F5F3;
     $color-source: #007700;
     $color-radical: #EE0000;
-    $color-external: #4444BB; /* #4444BB 一 yandex-external #00AB6B 一 medium-external #1A8BF0 一 twitter-external */
-
-
-
-
-
+    $color-external: #0044BB; /* #4444BB 一 yandex-external #00AB6B 一 medium-external #1A8BF0 一 twitter-external */
 
 
 
@@ -35,11 +30,11 @@ html {
     $color-typo-primary:            $color-base;
     $color-typo-inverse:            $color-essential;
     $color-typo-placeholder:        color($color-base l(+60%));
-  
 
 
 
-    /* Action / Focus */ 
+
+    /* Action / Focus */
     $color-action:                  color($color-project l(+15%));
     $color-action-hover:            color($color-project l(+20%));
     $color-action-focus:            $color-project;
@@ -48,11 +43,11 @@ html {
     $color-check:                   color($color-project l(+33%));
     $color-check-press:             color($color-project l(+25%));
 
-    $color-border-check:            color($color-project a(50%) l(-20%)); 
+    $color-border-check:            color($color-project a(50%) l(-20%));
     $color-border-check-press:      color($color-base a(35%));
-    $color-border-check-hover:      color($color-project a(60%) l(-25%)); 
+    $color-border-check-hover:      color($color-project a(60%) l(-25%));
     $color-border-focus:            $color-project;
-    
+
 
 
     /* Disable */
@@ -60,14 +55,14 @@ html {
     $color-disable-check:           color($color-base a(8%)); /* Может отличаться от $color-disable */
     $color-border-disable:          color($color-base l(+60%));
 
-    $color-typo-disable:            color($color-base l(+60%)); 
+    $color-typo-disable:            color($color-base l(+60%));
     $color-typo-inverse-disable:    color($color-base a(40%));
 
 
 
 
     /* Link */
-    $color-typo-link:               color($color-external s(20%));
+    $color-typo-link:               $color-external;
     $color-typo-link-hover:         $color-radical;
     $color-typo-link-ghost:         $color-ghost;
     $color-typo-link-ghost-hover:   color($color-ghost l(-10));
@@ -85,5 +80,3 @@ html {
 
 
 /* Три состояни DEFAULT ACTION DISABLE */
-
-
