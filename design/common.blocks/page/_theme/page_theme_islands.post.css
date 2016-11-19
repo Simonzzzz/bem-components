@@ -64,6 +64,7 @@ html {
     /* Link */
     $color-link:               $color-external;
     $color-link-hover:         $color-radical;
+    $color-link-out:         $color-source;
     $color-link-ghost:         $color-ghost;
     $color-link-ghost-hover:   color($color-ghost l(-10));
     $color-link-visited:       color($color-external s(10%)); /* #b40eb4 */
