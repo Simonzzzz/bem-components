@@ -8,7 +8,7 @@ html {
     $color-base: #000000;
     $color-essential: #FFFFFF;
     $color-project: #FFCC00 ; /* #FFCC00 一 yandex-project  #02B875 一 medium-project #64B2F8 一 twitter-project */
-    $color-ghost: #F6F5F3;
+    $color-phantom: #F6F5F3;
     $color-source: #007700;
     $color-radical: #EE0000;
     $color-path: #0044BB; /* #0044BB 一 yandex-external #00AB6B 一 medium-external #1A8BF0 一 twitter-external */
@@ -20,16 +20,16 @@ html {
     $color-default:                 color($color-essential); /* Цвет фона блоков */
     $color-inverse:                 $color-base; /* Иверсия фонового цвета блоков */
     $color-hover:                   color($color-project l(+33%)); /* Цвет фона блоков по ховеру */
-    $color-press:                   $color-ghost; /* Цвет фона блоков по нажатию */
+    $color-press:                   $color-phantom; /* Цвет фона блоков по нажатию */
 
     $color-border:                  color($color-base a(20%)); /* Цвет бордеров */
     $color-border-hover:            color($color-base a(30%)); /* Цвет бордеров по ховеру */
     $color-border-press:            color($color-base a(35%)); /* Цвет бордеров по нажатию */
-    $color-border-focus:            color($color-base a(35%)); /* Цвет бордеров по фокусу */
+    /* $color-border-focus:         color($color-base a(35%));  Цвет бордеров по фокусу */
 
     $color-typo-primary:            $color-base; /* Цвет основного текста */
     /* $color-typo-inverse:         $color-essential;  Цвет инверсии основного текста */
-    $color-typo-placeholder:        color($color-base l(+60%)); /* Цвет основного плейсхолдела */
+    $color-typo-placeholder:        color($color-base l(+60%)); /* Цвет основного плейсхолдера */
 
 
 
@@ -64,8 +64,8 @@ html {
     $color-link:                    $color-path; /* Цвет ссылок */
     $color-link-hover:              $color-radical; /* Цвет ссылок по ховеру */
     $color-link-external:           $color-source; /* Цвет внешних ссылок */
-    $color-link-ghost:              $color-ghost; /* Цвет второстепенных ссылок */
-    $color-link-ghost-hover:        color($color-ghost l(-10)); /* Цвет второстепенных ссылок по ховеру */
+    $color-link-ghost:              $color-phantom; /* Цвет второстепенных ссылок */
+    $color-link-ghost-hover:        color($color-phantom l(-10)); /* Цвет второстепенных ссылок по ховеру */
     $color-link-visited:            color($color-path s(10%)); /* Цвет посещенных ссылок */
 
 
