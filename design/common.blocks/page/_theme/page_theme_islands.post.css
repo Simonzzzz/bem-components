@@ -4,70 +4,69 @@ html {
 
 :block(page):mod(theme islands) {
 
-    /* Базовая (общая политра такая же как и у блоков) цветов от которой наследуются оттенки */
+    /* Базовая (общая политра такая же как и у блоков) цветов от которой наследуются оттенки (изменяется при общей настройки цветовой схемы)*/
     $color-base: #000000;
     $color-essential: #FFFFFF;
     $color-project: #FFCC00 ; /* #FFCC00 一 yandex-project  #02B875 一 medium-project #64B2F8 一 twitter-project */
     $color-ghost: #F6F5F3;
     $color-source: #007700;
     $color-radical: #EE0000;
-    $color-external: #0044BB; /* #4444BB 一 yandex-external #00AB6B 一 medium-external #1A8BF0 一 twitter-external */
+    $color-path: #0044BB; /* #0044BB 一 yandex-external #00AB6B 一 medium-external #1A8BF0 一 twitter-external */
 
 
 
-    /* Смысловая политра цветов наследуемая от основных цветов */
+    /* Смысловая политра цветов, наследуемая от основных цветов (изменяется при детальной настройки цветовой схемы) */
     /* Default */
-    $color-default:                 color($color-essential);
-    $color-inverse:                 $color-base;
-    $color-hover:                   color($color-project l(+33%)); /* #FFF6CB */
-    $color-press:                   $color-ghost;
+    $color-default:                 color($color-essential); /* Цвет фона блоков */
+    $color-inverse:                 $color-base; /* Иверсия фонового цвета блоков */
+    $color-hover:                   color($color-project l(+33%)); /* Цвет фона блоков по ховеру */
+    $color-press:                   $color-ghost; /* Цвет фона блоков по нажатию */
 
-    $color-border:                  color($color-base a(20%));
-    $color-border-hover:            color($color-base a(30%));
-    $color-border-press:            color($color-base a(35%));
-    $color-border-focus:            color($color-base a(35%));
+    $color-border:                  color($color-base a(20%)); /* Цвет бордеров */
+    $color-border-hover:            color($color-base a(30%)); /* Цвет бордеров по ховеру */
+    $color-border-press:            color($color-base a(35%)); /* Цвет бордеров по нажатию */
+    $color-border-focus:            color($color-base a(35%)); /* Цвет бордеров по фокусу */
 
-    $color-typo-primary:            $color-base;
-    $color-typo-inverse:            $color-essential;
-    $color-typo-placeholder:        color($color-base l(+60%));
-
+    $color-typo-primary:            $color-base; /* Цвет основного текста */
+    /* $color-typo-inverse:         $color-essential;  Цвет инверсии основного текста */
+    $color-typo-placeholder:        color($color-base l(+60%)); /* Цвет основного плейсхолдела */
 
 
 
     /* Action / Focus */
-    $color-action:                  color($color-project l(+15%));
-    $color-action-hover:            color($color-project l(+20%));
-    $color-action-focus:            $color-project;
-    $color-action-press:            $color-project;
+    $color-action:                  color($color-project l(+15%)); /* Фон активных блоков */
+    $color-action-hover:            color($color-project l(+20%)); /* Фон активных блоков по ховеру */
+    $color-action-focus:            $color-project; /* Фон активных блоков при фокусе */
+    $color-action-press:            $color-project; /* Фон активных блоков по нажатию */
 
-    $color-check:                   color($color-project l(+33%));
-    $color-check-press:             color($color-project l(+25%));
+    $color-check:                   color($color-project l(+33%)); /* Фон чекнутых блоков */
+    $color-check-press:             color($color-project l(+25%)); /* Фон чекнутых блоков по нажатию */
 
-    $color-border-check:            color($color-project a(50%) l(-20%));
-    $color-border-check-press:      color($color-base a(35%));
-    $color-border-check-hover:      color($color-project a(60%) l(-25%));
-    $color-border-focus:            $color-project;
+    $color-border-check:            color($color-project a(50%) l(-20%)); /* Цвет цвет бордера чекнутого блока */
+    $color-border-check-press:      color($color-base a(35%)); /* Цвет цвет бордера чекнутого блока при фокусе по нажатию */
+    $color-border-check-hover:      color($color-project a(60%) l(-25%)); /* Цвет цвет бордера чекнутого блока по ховеру */
+    $color-border-focus:            $color-project; /* Цвет цвет бордера при фокусе */
 
 
 
     /* Disable */
-    $color-disable:                 color($color-base a(8%));
-    $color-disable-check:           color($color-base a(8%)); /* Может отличаться от $color-disable */
-    $color-border-disable:          color($color-base l(+60%));
+    $color-disable:                 color($color-base a(8%)); /* Фон неактивного блока */
+    $color-disable-check:           color($color-base a(8%)); /* Фон чекнутого неактивного блока */
 
-    $color-typo-disable:            color($color-base l(+60%));
-    $color-typo-inverse-disable:    color($color-base a(40%));
+    $color-border-disable:          color($color-base l(+60%)); /* Фон бордеров неактивного блока */
+
+    $color-typo-disable:            color($color-base l(+60%)); /* Цвет основного текста неактивного блока */
+    $color-typo-inverse-disable:    color($color-base a(40%)); /* Цвет инверсии основного текста неактивного блока */ 
 
 
 
-
-    /* Link */
-    $color-link:               $color-external;
-    $color-link-hover:         $color-radical;
-    $color-link-out:         $color-source;
-    $color-link-ghost:         $color-ghost;
-    $color-link-ghost-hover:   color($color-ghost l(-10));
-    $color-link-visited:       color($color-external s(10%)); /* #b40eb4 */
+    /* Links */
+    $color-link:                    $color-path; /* Цвет ссылок */
+    $color-link-hover:              $color-radical; /* Цвет ссылок по ховеру */
+    $color-link-external:           $color-source; /* Цвет внешних ссылок */
+    $color-link-ghost:              $color-ghost; /* Цвет второстепенных ссылок */
+    $color-link-ghost-hover:        color($color-ghost l(-10)); /* Цвет второстепенных ссылок по ховеру */
+    $color-link-visited:            color($color-path s(10%)); /* Цвет посещенных ссылок */
 
 
     font: 13px 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -79,5 +78,3 @@ html {
     background: $color-default;
 }
 
-
-/* Три состояни DEFAULT ACTION DISABLE */

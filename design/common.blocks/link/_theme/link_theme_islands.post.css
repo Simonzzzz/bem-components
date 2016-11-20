@@ -13,7 +13,7 @@
     }
 
     &:block(link):mod(view external) {
-        color: $color-link-out;
+        color: $color-link-external;
     }
 
     &:block(link):mod(view ghost) {
