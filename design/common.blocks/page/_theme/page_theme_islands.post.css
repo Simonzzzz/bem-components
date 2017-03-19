@@ -56,7 +56,7 @@ html {
     $color-border-disable:          color($color-base l(+60%)); /* Фон бордеров неактивного блока */
 
     $color-typo-disable:            color($color-base l(+60%)); /* Цвет основного текста неактивного блока */
-    $color-typo-inverse-disable:    color($color-base a(40%)); /* Цвет инверсии основного текста неактивного блока */ 
+    $color-typo-inverse-disable:    color($color-base a(40%)); /* Цвет инверсии основного текста неактивного блока */
 
 
 
@@ -76,5 +76,36 @@ html {
 
     color: $color-typo-primary;
     background: $color-default;
-}
 
+
+
+
+    /* --- Легкий кастом --- */
+    $size-s: 0.813em; /* 0.813em */
+    $size-m: 0.813em; /* 0.813em */
+    $size-l: 0.938em; /* 0.938em */
+    $size-xl: 1.125em; /* 1.500em */
+
+    $out-radius: 0; /* Радиус внешнего блока */
+    $in-radius: 0; /* Радиус внутреннего блока (Нужно дотюнить через calc от внешненго)*/
+
+    $border-space: 2px; /* Размер бордера */
+
+    $checkbox-out-radius: 3px; /* Радиус внешнего блока чекбокса*/
+    $checkbox-in-radius: 2px; /* Радиус внутреннего блока чекбокса*/
+
+    $radio-border-space: 2px; /* Размер бордера радио */
+    $checkbox-border-space: 2px; /* Размер бордера чекбокса*/
+
+    $select-tick: url(../_islands/down-rambler.svg); /* arrow.svg */
+    $select-tick-hovered: url(../_islands/down-rambler-hovered.svg); /* arrow-hover.svg */
+
+    $select-s-tick: url(../_islands/down-rambler.svg); /* arrow-s.svg */
+    $select-s-tick-hovered: url(../_islands/down-rambler-hovered.svg); /* arrow-hover.svg */
+
+    $checkbox-tip: url(../../theme/_islands/check-rambler.svg); /* tip.svg */
+    $radio-dot-background: #fff; /* Фон точки */
+
+    $radio-space-size-m: 4px; /* Растояние от точки до бордера у m-радио */
+    $radio-space-size-l: 5px; /* Растояние от точки до бордера у l-радио */
+}
