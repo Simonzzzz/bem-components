@@ -108,4 +108,25 @@ html {
 
     $radio-space-size-m: 4px; /* Растояние от точки до бордера у m-радио */
     $radio-space-size-l: 5px; /* Растояние от точки до бордера у l-радио */
+
+    /* --- Полный кастом --- */
+    /* Attach */
+    $attach-fontFamily: Arial, Helvetica, sans-serif; /* Шрифт attach */
+    $attach-size-s-fontSize: 0.813em;/* Размер текста у s-attach */
+    $attach-size-m-fontSize: 0.813em; /* Размер текста у m-attach */
+    $attach-size-l-fontSize: 0.938em; /* Размер текста у l-attach */
+    $attach-size-xl-fontSize: 1.125em; /* Размер текста у xl-attach */
+
+    $attach-size-s-clear-width: 10px; /* Ширина отчищающего блока (с крестиком) у s-attach */
+    $attach-size-s-clear-height: 14px; /* Высота отчищающего блока (с крестиком) у s-attach */
+
+    $attach-size-m-clear-width: 10px; /* Ширина отчищающего блока (с крестиком) у m-attach */
+    $attach-size-m-clear-height: 14px; /* Высота отчищающего блока (с крестиком) у m-attach */
+
+    $attach-size-l-clear-width: 14px; /* Ширина отчищающего блока (с крестиком) у l-attach */
+    $attach-size-l-clear-height: 14px; /* Высота отчищающего блока (с крестиком) у l-attach */
+
+    $attach-size-xl-clear-width: 14px; /* Ширина отчищающего блока (с крестиком) у xl-attach */
+    $attach-size-xl-clear-height: 14px; /* Высота отчищающего блока (с крестиком) у xl-attach */
+    /* /Attach */
 }
