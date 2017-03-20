@@ -129,4 +129,60 @@ html {
     $attach-size-xl-clear-width: 14px; /* Ширина отчищающего блока (с крестиком) у xl-attach */
     $attach-size-xl-clear-height: 14px; /* Высота отчищающего блока (с крестиком) у xl-attach */
     /* /Attach */
+
+    /* Button */
+    $button-fontFamily: Arial, Helvetica, sans-serif; /* Шрифт у button */
+
+    $button-borderRadius: $out-radius; /* Скуругление краев внешней части у button */
+    $button-before-borderRadius: $in-radius; /* Скуругление краев внутренней части у button */
+
+    $control-group-borderRadius: 0px; /* Скуругление краев внешней части группы контролов */
+    $control-group-before-borderRadius: 0px; /* Скуругление краев внутренней части группы контролов */
+
+    $control-group-first-child-borderRadius: $out-radius 0 0 $out-radius; /* Скуругление краев внешней части первого контрола */
+    $control-group-first-child-before-borderRadius: $in-radius 0 0 $in-radius;  /* Скуругление краев внутренней части первого контрола */
+
+    $control-group-last-child-borderRadius: 0 $out-radius $out-radius 0; /* Скуругление краев внешней части последнего контрола */
+    $control-group-last-child-before-borderRadius: 0 $in-radius $in-radius 0; /* Скуругление краев внутренней части последннго контрола */
+
+    $control-group-only-child-borderRadius: $out-radius; /* Скругление краве внешней части любого дочернего элмемента */
+    $control-group-only-child-before-borderRadius: $in-radius; /* Скуругление краев внутренней части любого дочернего элмемента */
+
+    $control-group-last-child-before-border: $border-space; /* Отступ правой внутренний части у control-group на размер бордера  */
+
+    $button-size-s-font: $size-s; /* Размер текста текста у s-button */
+    $button-size-s-lineHeight: 1.846em; /* Межстрочечный интервал у s-button */
+
+    $button-size-m-font: $size-m; /* Размер текста у m-button */
+    $button-size-m-lineHeight: 2.154em; /* Межстрочечный интервал текста у m-button */
+
+    $button-size-l-font: $size-l; /* Размер текста у l-button */
+    $button-size-l-lineHeight: 2.133em; /* Межстрочечный интервал текста у l-button */
+
+    $button-size-xl-font: $size-xl; /* Размер текста у xl-button */
+    $button-size-xl-lineHeight: 2.111em; /* Межстрочечный интервал текста у xl-button */
+
+    $button-before-space: $border-space; /* Отступ внутренний части у button на размер бордера */
+
+    $button-size-s-icon-width: 1.846em; /* Ширина иконки у s-button */
+    $button-size-m-icon-width: 2.154em; /* Ширина иконки у m-button */
+    $button-size-l-icon-width: 2.133em;/* Ширина иконки у l-button */
+    $button-size-xl-icon-width: 38px; /* Ширина иконки у xl-button */
+
+    $button-size-s-text-margin: 0 0.769em; /* Внешние оступы у s-button */
+    $button-size-m-text-margin: 0 1.000em; /* Внешние оступы у m-button */
+    $button-size-l-text-margin: 0 1.000em; /* Внешние оступы у l-button */
+    $button-size-xl-text-margin: 0 1.000em; /* Внешние оступы у xl-button */
+
+    $button-focused-boxShadow: 0 0 0 1px; /* Тень(бордер) у button в фокуснутом состоянии*/
+    $button-focused-boxShadow-inset: 0 0 0 1px; /* Внутренняя тень (бордер) у button в фокуснутом состоянии */
+    $button-pseudo-before-boxShadow: 0 0 0 1px; /* Тень (бордер) ховернутых у pseudo-button */
+    $button-pseudo-hovered-boxShadow: 0 0 0 1px; /* Тень (бордер) ховернутых у pseudo-button  */
+    $button-pseudo-focused-before-boxShadow: 0 0 0 1px; /* Тень (бордер) нажатых у pseudo-button */
+    $button-pseudo-pressed-boxShadow: 0 0 0 1px;
+
+    $button-checked-before-boxShadow: 0 0 0 1px; /* Тень (бордер) внутренней части button при чеке */
+    $button-cheched-hovered-before-boxShadow: 0 0 0;  /* Тень (бордер) внутренней части чекнутых button при наведении */
+    $button-cheched-pseudo-before-boxShadow: 0 0 0 1px; /* Тень (бордер) внутренней части pseudo-button при чеке */
+    /* /Button */
 }

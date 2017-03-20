@@ -1,6 +1,6 @@
-:block(button):mod(theme islands) { 
+:block(button):mod(theme islands) {
 
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: $button-fontFamily;
 
     position: relative;
 
@@ -11,9 +11,9 @@
 
     user-select: none;
 
-    color: $color-typo-primary;   
+    color: $color-typo-primary;
     border: 0;
-    border-radius: 3px;
+    border-radius: $button-borderRadius;
     outline: 0;
     background: $color-border;
 
@@ -49,15 +49,15 @@
     /* Decorative element (inner background) */
     &:before {
         position: absolute;
-        top: 1px;
-        right: 1px;
-        bottom: 1px;
-        left: 1px;
+        top: $button-before-space;
+        right: $button-before-space;
+        bottom: $button-before-space;
+        left: $button-before-space;
 
         content: '';
 
-        border-radius: 2px;
-        background: $color-default; 
+        border-radius: $button-before-borderRadius;
+        background: $color-default;
     }
 
     &:block(button):mod(hovered) {
@@ -72,26 +72,26 @@
         background: $color-border-focus;
 
         &:block(button):before {
-            box-shadow: 0 0 0 1px $color-border-focus, inset 0 0 0 1px $color-border-focus;
+            box-shadow: $button-focused-boxShadow $color-border-focus, inset $button-focused-boxShadow-inset $color-border-focus;
         }
     }
 
     &:block(button):mod(pressed):before {
-        background: $color-press; 
+        background: $color-press;
     }
 
     &:block(button):mod(checked) {
-        background: $color-border-check; 
+        background: $color-border-check;
 
         &:before {
-            background: $color-check; 
+            background: $color-check;
         }
 
         &:block(button):mod(pressed) {
-            background: $color-border-check-press; 
+            background: $color-border-check-press;
 
             &:before {
-                background: $color-check-press; 
+                background: $color-check-press;
             }
         }
 
@@ -128,7 +128,7 @@
         }
 
         &:block(button):mod(hovered) {
-            background: $color-action-hover; 
+            background: $color-action-hover;
         }
 
         &:block(button):mod(pressed) {
@@ -149,11 +149,11 @@
 
         &:before {
             background: none;
-            box-shadow: 0 0 0 1px $color-border;
+            box-shadow: $button-pseudo-before-boxShadow $color-border;
         }
 
         &:block(button):mod(hovered):before {
-            box-shadow: 0 0 0 1px $color-border-hover;
+            box-shadow: $button-pseudo-hovered-boxShadow $color-border-hover;
         }
 
         &:block(button):mod(pressed):before {
@@ -163,16 +163,16 @@
         &:block(button):mod(checked) {
             &:before {
                 background: $color-check;
-                box-shadow: 0 0 0 1px $color-border-check;
+                box-shadow: $button-checked-before-boxShadow $color-border-check;
             }
 
             &:block(button):mod(hovered):before {
-                box-shadow: 0 0 0 1px $color-border-hover;
+                box-shadow: $button-pseudo-hovered-boxShadow $color-border-hover;
             }
 
             &:block(button):mod(pressed):before {
                 background: $color-check;
-                box-shadow: 0 0 0 1px $color-border-press;
+                box-shadow: $button-pseudo-pressed-boxShadow $color-border-press;
             }
         }
     }
@@ -198,54 +198,54 @@
     }
 
     &:block(button):mod(size s) {
-        font-size: 13px;
-        line-height: 24px;
+        font-size: $button-size-s-font;
+        line-height: $button-size-s-lineHeight;
 
         :block(icon) {
-            width: 24px;
+            width: $button-size-s-icon-width;
         }
 
         :block(button):elem(text) {
-            margin: 0 10px;
+            margin: $button-size-s-text-margin;
         }
     }
 
     &:block(button):mod(size m) {
-        font-size: 13px;
-        line-height: 28px;
+        font-size: $button-size-m-font;
+        line-height: $button-size-m-lineHeight;
 
         :block(icon) {
-            width: 28px;
+            width: $button-size-m-icon-width;
         }
 
         :block(button):elem(text) {
-            margin: 0 13px;
+            margin: $button-size-m-text-margin;
         }
     }
 
     &:block(button):mod(size l) {
-        font-size: 15px;
-        line-height: 32px;
+        font-size: $button-size-l-font;
+        line-height: $button-size-l-lineHeight;
 
         :block(icon) {
-            width: 32px;
+            width: $button-size-l-icon-width;
         }
 
         :block(button):elem(text) {
-            margin: 0 15px;
+            margin: $button-size-l-text-margin;
         }
     }
 
     &:block(button):mod(size xl) {
-        font-size: 18px;
-        line-height: 38px;
+        font-size: $button-size-xl-font;
+        line-height: $button-size-xl-lineHeight;
 
         :block(icon) {
-            width: 38px;
+            width: $button-size-xl-icon-width;
         }
 
         :block(button):elem(text) {
-            margin: 0 18px;
+            margin: $button-size-xl-text-margin;
         }
     }
 
@@ -276,12 +276,12 @@
     }
 
     :block(button):mod(theme islands) {
-        border-radius: 0;
+        border-radius: $control-group-borderRadius;
 
         &:before {
             right: 0;
 
-            border-radius: 0;
+            border-radius: $control-group-before-borderRadius;
         }
 
         &:block(button):mod(checked):before {
@@ -296,10 +296,10 @@
     > :block(button):mod(theme islands):first-child,
     > :first-child :block(button):mod(theme islands),
     > :first-child:block(popup) + :block(button):mod(theme islands) {
-        border-radius: 3px 0 0 3px;
+        border-radius: $control-group-first-child-borderRadius;
 
         &:before {
-            border-radius: 2px 0 0 2px;
+            border-radius: $control-group-first-child-before-borderRadius;
         }
 
         &:block(button):mod(focused-hard):block(button):before {
@@ -309,19 +309,19 @@
 
     > :block(button):mod(theme islands):last-child,
     > :last-child :block(button):mod(theme islands) {
-        border-radius: 0 3px 3px 0;
+        border-radius: $control-group-last-child-borderRadius;
 
         &:before {
-            border-radius: 0 2px 2px 0;
-            right: 1px;
+            border-radius: $control-group-last-child-before-borderRadius;
+            right: $control-group-last-child-before-border;
         }
     }
 
     > :only-child :block(button):mod(theme islands) {
-        border-radius: 3px;
+        border-radius: $control-group-only-child-borderRadius;
 
         &:before {
-            border-radius: 2px;
+            border-radius: $control-group-only-child-before-borderRadius;
         }
     }
 }
