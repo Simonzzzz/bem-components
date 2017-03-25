@@ -7,7 +7,7 @@ html {
     /* Базовая (общая политра такая же как и у блоков) цветов от которго наследуются оттенки (изменяется при общей настройки цветовой схемы)*/
     $color-base: #000000;
     $color-essential: #FFFFFF;
-    $color-project: #FFCC00 ; /* #FFCC00 一 yandex-project  #02B875 一 medium-project #64B2F8 一 twitter-project */
+    $color-project: #FFCC00; /* #FFCC00 一 yandex-project  #02B875 一 medium-project #64B2F8 一 twitter-project */
     $color-phantom: #F6F5F3;
     $color-source: #007700;
     $color-radical: #EE0000;
@@ -238,7 +238,7 @@ html {
     $input-fontFamily: Arial, Helvetica, sans-serif; /* Шрифт инпута */
 
     $input-before-space: $border-space; /* Отступ верхний у внутренний части input на размер бордера */
-    $input-focused-boxShadow: 0 0 0 0; /* Тень у фокуснутого input */
+    $input-focused-boxShadow: 0 0 0 0px; /* Тень у фокуснутого input */
     $input-focused-inset-boxShadow: 0 0 0 $border-space; /* Внутренняя тень у фокуснутого input */
 
     $input-borderRadius: 0; /* Внутренний бордер-радиус у input */
@@ -307,5 +307,22 @@ html {
     $link-size-m: 0.813em; /* Размер текста у m-link */
     $link-size-l: 0.938em; /* Размер текста у l-link */
     $link-size-xl: 1.125em; /* Размер текста у xl-link */
-  /* /Link */
+    /* /Link */
+
+    /* Modal */
+    $modal-margin: 5px; /* Отступы у модалки */
+    $modal-borderWidth: 1px; /* Бордеры у модалки */
+    /* /Modal */
+
+    /* Page */
+    /* $page-fontsize: 13px/15px;  Размер текста страницы */
+    /* $page-fontFamily: Arial, Helvetica, sans-serif;  Шрифт страниы */
+    /* $page-color: $base;  Цвет текста страницы */
+    /* $page-background: alpha(lightness($base, 100%), 100%);  Цвет фона страницы */
+    /* /Page */
+
+    /* Popup */
+    $popup-boxShadow: 0 0 0 1px; /* Короткая тень у popup */
+    $popup-long-boxShadow: 0 10px 20px -5px; /* Длинная тень у popup */
+    /* Popup */
 }

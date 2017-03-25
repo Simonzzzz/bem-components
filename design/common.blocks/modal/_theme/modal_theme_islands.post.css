@@ -15,9 +15,9 @@
     }
 
     :block(modal):elem(content) {
-        margin: 5px;
+        margin: $modal-margin;
 
-        border: 1px solid $color-border;
+        border: $modal-borderWidth solid $color-border;
         background-color: #fff;
     }
 

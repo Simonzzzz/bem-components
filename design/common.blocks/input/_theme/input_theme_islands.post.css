@@ -114,7 +114,7 @@
         z-index: 1;
 
         &:before {
-            box-shadow: $input-focused-boxShadow $project, inset $input-focused-inset-boxShadow $project; /* */
+            box-shadow: $input-focused-boxShadow $color-border-focus, inset $input-focused-inset-boxShadow $color-border-focus; /* */
         }
 
         :block(input):elem(control) {
@@ -184,8 +184,8 @@
 
     &:block(input):mod(size l) :block(input):elem(clear),
     &:block(input):mod(size xl) :block(input):elem(clear) {
-        width: $input-size-l-xl-clear-width;
-        height: $input-size-l-xl-clear-height;
+        width: $input-size-l-xl-clear-width; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Новый класс l-xl*/
+        height: $input-size-l-xl-clear-height; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Новый класс l-xl*/
 
         background-image: url(../../theme/_islands/clear_size_l.svg);
         background-position: 9px 50%;

@@ -9,8 +9,8 @@
     animation-timing-function: ease-out;
 
     background: $color-default;
-    box-shadow: 0 0 0 1px color($color-base a(10%)),
-                0 10px 20px -5px color($color-base a(40%));
+    box-shadow: $popup-boxShadow color($color-base a(10%)),
+                $popup-long-boxShadow color($color-base a(40%));
 
     animation-fill-mode: forwards;
 
