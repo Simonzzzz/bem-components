@@ -232,4 +232,70 @@ html {
 
     $checkbox-after-background-image: $checkbox-tip;
     /* /Checkbox */
+
+
+    /* Input */
+    $input-fontFamily: Arial, Helvetica, sans-serif; /* Шрифт инпута */
+
+    $input-before-space: $border-space; /* Отступ верхний у внутренний части input на размер бордера */
+    $input-focused-boxShadow: 0 0 0 0; /* Тень у фокуснутого input */
+    $input-focused-inset-boxShadow: 0 0 0 $border-space; /* Внутренняя тень у фокуснутого input */
+
+    $input-borderRadius: 0; /* Внутренний бордер-радиус у input */
+    $input-before-borderRadius: 0; /* Внешний бордер-радиус у input */
+
+    $input-size-s-clear-width: 1.846em; /* Ширина отчищающего блока (с крестиком) у s/m-input */
+    $input-size-s-clear-height: 1.846em; /* Высота отчищающего блока (с крестиком) у s/m-input */
+
+    $input-size-m-clear-width: 2.133em; /* Ширина отчищающего блока (с крестиком) у s/m-input */
+    $input-size-m-clear-height: 2.133em; /* Высота отчищающего блока (с крестиком) у s/m-input */
+
+
+    $input-size-s-m-clear-width: 1.846em; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Новый класс s-m*/
+    $input-size-s-m-clear-height: 1.846em; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Новый класс s-m*/
+
+
+    $input-size-l-clear-width: 2.133em; /* Ширина отчищающего блока (с крестиком) у l-input */
+    $input-size-l-clear-height: 2.133em; /* Высота отчищающего блока (с крестиком) у l-input */
+
+    $input-size-xl-clear-width: 2.462em; /* Ширина отчищающего блока (с крестиком) у xl-input */
+    $input-size-xl-clear-height: 2.462em; /* Высота отчищающего блока (с крестиком) у xl-input */
+
+
+		$input-size-l-xl-clear-width: 2.133em; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Новый класс l-xl*/
+		$input-size-l-xl-clear-height: 2.133em; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Новый класс l-xl*/
+
+
+    $input-size-s-fontSize: $size-s; /* Тень у фокуснутого s-input */
+    $input-size-s-lineHeight: 1.231em; /* Межстрочечный интервал у s-input */
+    $input-size-s-control-height: 1.846em; /* Высота самого s-input */
+    $input-size-s-control-padding: 0 0.462em; /* Отступы самого s-input */
+    $input-size-s-has-clear-paddingRight: 1.846em; /* Оступп правый под размер иконки очистить (крестик) у s-input */
+
+    $input-size-m-fontSize: $size-m; /* Тень у фокуснутого m-input */
+    $input-size-m-lineHeight: 1.222em; /* Межстрочечный интервал у m-input */
+    $input-size-m-control-height: 2.111em; /* Высота самого m-input */
+    $input-size-m-control-padding: 0 0.667em; /* Отступы самого m-input */
+    $input-size-m-has-clear-paddingRight: 2.111em; /* Оступп правый под размер иконки очистить (крестик) у m-input */
+    $input-size-m-clear-width: 2.111em; /* Ширина отчищающего блока (с крестиком) у m-input */
+    $input-size-m-clear-height: 2.111em; /* Высота отчищающего блока (с крестиком) у m-input */
+
+    $input-size-l-fontSize: $size-l; /* Тень у l-input при фокусе */
+    $input-size-l-lineHeight: 1.200em; /* Межстрочечный интервал текста у l-input */
+    $input-size-l-control-height: 2.133em; /* Высота самого l-input */
+    $input-size-l-control-padding:  0 0.667em; /* Внутренние отступы самого l-input */
+    $input-size-l-has-clear-paddingRight: 2.133em; /* Внутренний правый остут под размер иконки очистить (крестик) у l-input */
+
+    $input-size-xl-fontSize: $size-xl; /* Размер текста у xl-input при фокусе */
+    $input-size-xl-lineHeight: 1.222em; /* Межстрочечный интервал текста у xl-input */
+    $input-size-xl-control-height: 2.111em; /* Высота у самого xl-input */
+    $input-size-xl-control-padding: 0 0.667em; /* Внутренние отступы у самого xl-input */
+    $input-size-xl-has-clear-paddingRight: 2.111em; /* Правый внутренний оступ под размер иконки очистить (крестик) у xl-input */
+    $input-size-xl-clear-width: 2.111em; /* Ширина отчищающего блока (с крестиком) у xl-input */
+    $input-size-xl-clear-height: 2.111em; /* Высота отчищающего блока (с крестиком) у xl-input */
+
+    $control-group-before-right: 0; /* Правый отступ внутренней части контролла в control-group */
+    $control-group-input-focused-before-right: 1px;  /* Правый отступ внутренней части контролла в control-group при фокусе */
+    $control-group-last-child-right: 1px; /* Правый оступ у последнего контрола в control-group */
+    /* /Input */
 }

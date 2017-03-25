@@ -1,6 +1,6 @@
 :block(input):mod(theme islands) {
 
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: $input-fontFamily;
 
     position: relative;
 
@@ -10,13 +10,16 @@
 
     -webkit-tap-highlight-color: $color-border-hover;
 
+    border-radius: $input-borderRadius;
+
     /* Decorative element (inner background) */
     &:before {
         position: absolute;
-        top: 1px;
-        right: 1px;
-        bottom: 1px;
-        left: 1px;
+        top: $input-before-space;
+        right: $input-before-space;
+        bottom: $input-before-space;
+        left: $input-before-space;
+        border-radius: $input-before-borderRadius;
 
         content: '';
 
@@ -111,7 +114,7 @@
         z-index: 1;
 
         &:before {
-            box-shadow: 0 0 0 1px $color-border-focus, inset 0 0 0 1px $color-border-focus; /* */
+            box-shadow: $input-focused-boxShadow $project, inset $input-focused-inset-boxShadow $project; /* */
         }
 
         :block(input):elem(control) {
@@ -129,51 +132,51 @@
 
         :block(input):elem(box),
         :block(input):elem(control) {
-            color: $color-disable; 
+            color: $color-disable;
             cursor: default;
         }
     }
 
     &:block(input):mod(size s) :block(input):elem(clear),
     &:block(input):mod(size m) :block(input):elem(clear) {
-        width: 24px;
-        height: 24px;
+        width: $input-size-s-m-clear-width; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Новый класс s-m*/
+        height: $input-size-s-m-clear-height; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Новый класс s-m*/
 
         background-image: url(../../theme/_islands/clear_size_s.svg);
         background-position: 7px 50%;
     }
 
     &:block(input):mod(size s) {
-        font-size: 13px;
-        line-height: 16px;
+        font-size: $input-size-s-fontSize;
+        line-height: $input-size-s-lineHeight;
 
         :block(input):elem(control) {
-            height: 24px;
-            padding: 0 7px;
+            height: $input-size-s-control-height;
+            padding: $input-size-s-control-padding;
         }
 
         &:block(input):mod(has-clear) :block(input):elem(control) {
-            padding-right: 24px;
+            padding-right: $input-size-s-has-clear-paddingRight;
         }
 
     }
 
     &:block(input):mod(size m) {
-        font-size: 13px;
-        line-height: 16px;
+        font-size: $input-size-m-fontSize;
+        line-height: $input-size-m-lineHeight;
 
         :block(input):elem(control) {
-            height: 28px;
-            padding: 0 8px;
+            height: $input-size-m-control-height;
+            padding: $input-size-m-control-padding;
         }
 
         &:block(input):mod(has-clear) :block(input):elem(control) {
-            padding-right: 28px;
+            padding-right: $input-size-m-has-clear-paddingRight;
         }
 
         :block(input):elem(clear) {
-            width: 28px;
-            height: 28px;
+            width: $input-size-m-clear-width;
+            height: $input-size-m-clear-height;
 
             background-position: 9px 50%;
         }
@@ -181,43 +184,43 @@
 
     &:block(input):mod(size l) :block(input):elem(clear),
     &:block(input):mod(size xl) :block(input):elem(clear) {
-        width: 32px;
-        height: 32px;
+        width: $input-size-l-xl-clear-width;
+        height: $input-size-l-xl-clear-height;
 
         background-image: url(../../theme/_islands/clear_size_l.svg);
         background-position: 9px 50%;
     }
 
     &:block(input):mod(size l) {
-        font-size: 15px;
-        line-height: 18px;
+        font-size: $input-size-l-fontSize;
+        line-height: $input-size-l-lineHeight;
 
         :block(input):elem(control) {
-            height: 32px;
-            padding: 0 10px;
+            height: $input-size-l-control-height;
+            padding: $input-size-l-control-padding;
         }
 
         &:block(input):mod(has-clear) :block(input):elem(control) {
-            padding-right: 32px;
+            padding-right: $input-size-l-has-clear-paddingRight;
         }
     }
 
     &:block(input):mod(size xl) {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: $input-size-xl-fontSize;
+        line-height: $input-size-xl-lineHeight;
 
         :block(input):elem(control) {
-            height: 38px;
-            padding: 0 12px;
+            height: $input-size-xl-control-height;
+            padding: $input-size-xl-control-padding;
         }
 
         &:block(input):mod(has-clear) :block(input):elem(control) {
-            padding-right: 38px;
+            padding-right: $input-size-xl-has-clear-paddingRight;
         }
 
         :block(input):elem(clear) {
-            width: 38px;
-            height: 38px;
+            width: $input-size-xl-clear-width;
+            height: $input-size-xl-clear-height;
 
             background-position: 12px 50%;
         }
@@ -239,14 +242,14 @@
 :block(control-group) {
     :block(input):mod(theme islands) {
         &:before {
-            right: 0;
+            right: $control-group-before-right;
         }
     }
 
     > :block(input):mod(theme islands):last-child,
     > :last-child :block(input):mod(theme islands) {
         &:before {
-            right: 1px;
+            right: $control-group-last-child-right;
         }
     }
 }
