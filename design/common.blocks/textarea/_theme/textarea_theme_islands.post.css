@@ -1,6 +1,6 @@
 :block(textarea):mod(theme islands) {
 
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: $textarea-fontFamily;
 
     display: inline-block;
 
@@ -9,9 +9,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    min-height: 2em;
+    min-height: $textarea-minHeight;
 
-    border: 1px solid $color-border;
+    border: $textarea-borderWidth solid $color-border;
     outline: none;
 
     -webkit-appearance: none;
@@ -29,7 +29,7 @@
 
     &:block(textarea):mod(focused) {
         border-color: $color-border-focus;
-        box-shadow: 0 0 0 1px $color-border-focus;
+        box-shadow: $textarea-focused-boxShadow $color-border-focus;
     }
 
     &:block(textarea):mod(width available) {
@@ -48,26 +48,26 @@
     }
 
     &:block(textarea):mod(size s) {
-        font-size: 13px;
-        line-height: 16px;
-        padding-left: 6px;
+        font-size: $textarea-size-s-fontSize;
+        line-height: $textarea-size-s-lineHeight;
+        padding-left: $textarea-size-s-paddingLeft;
     }
 
     &:block(textarea):mod(size m) {
-        font-size: 13px;
-        line-height: 18px;
-        padding: 3px 5px;
+        font-size: $textarea-size-m-fontSize;
+        line-height: $textarea-size-m-lineHeight;
+        padding: $textarea-size-m-padding;
     }
 
     &:block(textarea):mod(size l) {
-        font-size: 15px;
-        line-height: 20px;
-        padding: 5px 7px;
+        font-size: $textarea-size-l-fontSize;
+        line-height: $textarea-size-l-lineHeight;
+        padding: $textarea-size-l-padding;
     }
 
     &:block(textarea):mod(size xl) {
-        font-size: 18px;
-        line-height: 22px;
-        padding-left: 11px;
+        font-size: $textarea-size-xl-fontSize;
+        line-height: $textarea-size-xl-lineHeight;
+        padding-left: $textarea-size-xl-paddingLeft;
     }
 }

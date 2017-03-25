@@ -1,13 +1,13 @@
 :block(checkbox-group):mod(theme islands) {
-    
+
     display: inline-block;
 
     &:block(checkbox-group):mod(size m) {
-        line-height: 24px;
+        line-height: $checkbox-size-m-button-fontSize;
     }
 
     &:block(checkbox-group):mod(size l) {
-        line-height: 30px;
+        line-height: $checkbox-group-size-l-lineHeight;
     }
 
     &:block(checkbox-group):mod(type button) {

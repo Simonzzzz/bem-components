@@ -376,10 +376,6 @@ html {
     $radio-group-size-l-lineHeight: 2.000em; /* Межстрочечный интервал текста у  l-radio в списке  (расстояние между radio) */
     /* /Radio-group */
 
-    /* Spin */
-    $spin-borderWidth: 2px; /* Ширина бордера у спиннера */
-    /* /Spin*/
-
     /* Select */
     $select-button-size-s-paddingRight: 2.077em; /* Внутренний правый отступ у s-slect-button (на ширину иконки стрелки) */
     $select-button-size-s-icon-width: 2.077em; /* Ширина иконки (стрелки) s-slect-button */
@@ -427,4 +423,49 @@ html {
 
     $menu-item-link-after-space: 0px; /* Отступ кликабельной области у menu-item-link в списке */ /*Не нашёл куда воткнуть!!!!!!!!!!!!!!!!!*/
     /* /Menu */
+
+    /* Textarea */
+    $textarea-fontFamily: Arial, Helvetica, sans-serif; /* Шрифт у textarea */
+    $textarea-minHeight: 2em; /* Минимальная высота у textarea */
+
+    $textarea-focused-boxShadow: 0 0 0 1px; /* Тень у textarea при фокусе */
+    $textarea-borderWidth: 1px; /* Ширина бордера у textarea */
+
+    $textarea-size-s-fontSize: 0.813em; /* Размер текста s-textarea */
+    $textarea-size-s-lineHeight: 11.231em; /* Межстрочечный интервал текста у s-textarea */
+    $textarea-size-s-paddingLeft: 0.462em; /* Внутренний левый отступ у s-textarea */
+
+    $textarea-size-m-fontSize: 0.813em; /* Размер текста у m textarea */
+    $textarea-size-m-lineHeight: 1.385em; /* Межстрочечный интервал текста у m-textarea */
+    $textarea-size-m-padding: 0.231em 0.385em; /* Внутренние отступы у m-textarea */
+
+    $textarea-size-l-fontSize: 0.938em; /* Размер текста у l-textarea */
+    $textarea-size-l-lineHeight: 1.333em; /* Межстрочечный интервал текста у l-textarea */
+    $textarea-size-l-padding: 0.333em 0.467em; /* Внутренние отступы у l-textarea */
+
+    $textarea-size-xl-fontSize: 1.125em; /* Размер текста у xl-textarea */
+    $textarea-size-xl-lineHeight: 1.222em; /* Межстрочечный интервал текста у xl-textarea */
+    $textarea-size-xl-paddingLeft: 0.611em; /* Внутренний левый отступ у xl-textarea */
+    /* Textarea */
+
+    /* Checkbox group*/
+    $checkbox-size-m-button-fontSize: 1em; /* Размер текста у m-checkbox-button */
+    $checkbox-size-l-button-fontSize: 1em;  /* Размер текста у l-checkbox-button */
+    /* Checkbox group*/
+
+    /* Radio group */
+    $radio-group-size-m-button-fontSize: 1em; /* Размер текста у m-radio-button */
+    $radio-group-size-l-button-fontSize: 1em; /* Размер текста у l-radio-button */
+    /* Radio group */
+
+
+    /* Spiner */
+		$spin-borderWidth: 2px; /* Ширина бордера у спиннера */
+
+    $size-list-xs: 16px;
+    $size-list-s: 24px;
+    $size-list-m: 28px;
+    $size-list-l: 32px;
+    $size-list-xl: 38px;
+    /* Spiner */
 }

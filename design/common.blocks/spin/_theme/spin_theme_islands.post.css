@@ -33,7 +33,7 @@
 
     @each $size, $val in
     (xs,   s,     m,     l,     xl),  /* size */
-    (16px, 24px,  28px,  32px,  38px) /* val */ {
+    ($size-list-xs, $size-list-s,  $size-list-m,  $size-list-l,  $size-list-xl) /* val */ {
         &:block(spin):mod(size $size) {
             line-height: $val;
 
