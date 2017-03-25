@@ -185,4 +185,51 @@ html {
     $button-cheched-hovered-before-boxShadow: 0 0 0;  /* Тень (бордер) внутренней части чекнутых button при наведении */
     $button-cheched-pseudo-before-boxShadow: 0 0 0 1px; /* Тень (бордер) внутренней части pseudo-button при чеке */
     /* /Button */
+
+    /* Checkbox */
+    $checkbox-fontFamily: Arial, Helvetica, sans-serif; /* Шрифт для checkbox */
+
+    $checkbox-borderRadius: $checkbox-out-radius; /* Скругление краёв у внешней части checkbox */
+    $checkbox-before-borderRadius: $checkbox-in-radius; /* Скругление краев внутренней части checkbox */
+
+    $checkbox-before-space: $checkbox-border-space; /* Отступ у внутренеей части checkbox на размер бордера */
+
+    $checkbox-after-space: 2px; /* Отступ иконки (галочки) у checkbox */
+
+
+
+
+    $checkbox-size-m-fontSize: $size-m; /* Размер текста у m-checkbox */
+    $checkbox-size-m-width: 1.077em; /* Ширина у m-checkbox */
+    $checkbox-size-m-height: 1.077em; /* Высота у m-checkbox */
+    $checkbox-size-m-lineHeight: 1.077em; /* Межстрочечный интервал текста у m-checkbox */
+    $checkbox-size-m-marginRight: 0.385em; /* Внежний правый отступ у m-checkbox (от текса) */
+    $checkbox-size-m-top: 0.154em; /* Верхний отступ у m-checkbox */
+    $checkbox-size-m-transformY: -0.385em; /* Трансформация галочки при появлении/скрытии у m-checkbox */
+
+    /* $checkbox-size-m-after-width: 0px; */ /* Ширина иконки (галочки) у m-checkbox */
+    /* $checkbox-size-m-after-height: 0px; */ /* Высота иконки (галочки) у m-checkbox */
+
+    $checkbox-size-l-fontSize: $size-l; /* Размер текста у l-checkbox */
+    $checkbox-size-l-width: 1.133em; /* Ширина у l-checkbox */
+    $checkbox-size-l-height: 1.133em; /* Высота у l-checkbox */
+    $checkbox-size-l-lineHeight: 1.133em;  /* Межстрочечный интервал текста у l-checkbox */
+    $checkbox-size-l-marginRight: 0.467em; /* Внешний правый отступ у l-checkbox (от текса) */
+    $checkbox-size-l-top: 0.200em;/* Верхний отступ у l-checkbox */
+    $checkbox-size-l-transformY: -0.333em; /* Трансформация галочки при появлении/скрытии у l-checkbox */
+
+    /* $checkbox-size-l-after-width: 0px */ /* Ширина иконки (галочки) l-checkbox  1.200em*/
+    /* $checkbox-size-l-after-height: 0px */ /* Высота иконки (галочки) l-checkbox 1.200em*/
+
+    $checkbox-focused-boxShadow: 0 0 0 1px; /* Внешняя тень у checkbox при фокусе */
+    $checkbox-focused-inset-boxShadow: 0 0 0 1px; /* Внутреняя тень у checkbox при фокусе */
+
+    $checkbox-disabled-checked-opacity: 0.4; /* Прозрачность у checkbox в состоянии disable */
+
+    $checkbox-line-size-m-marginRight: 1.000em; /* Правый отступ у m-checkbox с текстом  */
+    $checkbox-line-size-l-marginRight: 1.000em; /* Правый оступ у l-checkbox с текстом  */
+    $checkbox-line-last-child-marginRight: 0; /* Правый отступ у последнего checkbox с текстом  */
+
+    $checkbox-after-background-image: $checkbox-tip;
+    /* /Checkbox */
 }

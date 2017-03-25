@@ -1,10 +1,10 @@
 :block(checkbox):mod(theme islands) {
-    
+
     position: relative; /* fix #1538 */
 
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: $checkbox-fontFamily;
 
-    -webkit-tap-highlight-color: $color-typo-primary; 
+    -webkit-tap-highlight-color: $color-typo-primary;
 
     &:hover {
         cursor: pointer;
@@ -25,25 +25,25 @@
         display: inline-block;
 
         border-radius: 3px;
-        background: $color-border; 
+        background: $color-border;
 
         &:before {
             position: absolute;
-            top: 1px;
-            right: 1px;
-            bottom: 1px;
-            left: 1px;
+            top: $checkbox-before-space;
+            right: $checkbox-before-space;
+            bottom: $checkbox-before-space;
+            left: $checkbox-before-space;
 
             content: '';
 
-            border-radius: 2px;
+            border-radius: $checkbox-before-borderRadius;
             background: $color-default;
         }
 
         &:after {
             position: absolute;
-            top: -5px;
-            left: 2px;
+            top: $checkbox-after-space;
+            left: $checkbox-after-space;
 
             content: '';
 
@@ -58,53 +58,53 @@
     }
 
     &:block(checkbox):mod(size m) {
-        font-size: 13px;
+        font-size: $checkbox-size-m-fontSize;
 
         :block(checkbox):elem(box) {
-            line-height: 14px;
+            line-height: $checkbox-size-m-lineHeight;
 
-            top: 2px;
+            top: $checkbox-size-m-top;
 
-            width: 14px;
-            height: 14px;
-            margin-right: 5px;
+            width: $checkbox-size-m-width;
+            height: $checkbox-size-m-height;
+            margin-right: $checkbox-size-m-marginRight;
 
             &:after {
-                width: 15px;
-                height: 15px;
+                /*width: $checkbox-size-m-after-width;*/
+                /*height: $checkbox-size-m-after-height;*/
 
-                transform: translateY(-5px);
+                transform: translateY($checkbox-size-m-transformY);
             }
         }
     }
 
     &:block(checkbox):mod(size l) {
-        font-size: 15px;
+        font-size: $checkbox-size-l-fontSize;
 
         :block(checkbox):elem(box) {
-            line-height: 17px;
+            line-height: $checkbox-size-l-lineHeight;
 
-            top: 3px;
+            top: $checkbox-size-l-top;
 
-            width: 17px;
-            height: 17px;
-            margin-right: 7px;
+            width: $checkbox-size-l-width;
+            height: $checkbox-size-l-height;
+            margin-right: $checkbox-size-l-marginRight;
 
             &:after {
-                width: 18px;
-                height: 18px;
+                /*width: $checkbox-size-l-after-width;*/
+                /*height: $checkbox-size-l-after-height;*/
 
-                transform: translateY(-7px);
+                transform: translateY($checkbox-size-l-transformY);
             }
         }
     }
 
     &:block(checkbox):mod(checked) {
         :block(checkbox):elem(box) {
-            background: $color-border-check; 
+            background: $color-border-check;
 
             &:before {
-                background: $color-check; 
+                background: $color-check;
             }
 
             &:after {
@@ -119,27 +119,27 @@
 
     &:block(checkbox):mod(focused) {
         :block(checkbox):elem(box):before {
-            box-shadow: 0 0 0 1px $color-border-focus, inset 0 0 0 1px $color-border-focus; 
+            /* Цвет тени (бордера) чекнутого чекбокса кнопки по ховеру */  /*box-shadow: $checkbox-focused-boxShadow $project, inset $checkbox-focused-inset-boxShadow $project; */
         }
     }
 
     &:block(checkbox):mod(hovered) {
         :block(checkbox):elem(box) {
-            background: $color-border-hover; 
+            background: $color-border-hover;
         }
 
         &:block(checkbox):mod(checked) :block(checkbox):elem(box) {
-            background: $color-border-check-hover; 
+            background: $color-border-check-hover;
         }
     }
 
     &:block(checkbox):mod(disabled) {
         cursor: default;
 
-        color: $color-typo-disable; 
+        color: $color-typo-disable;
 
         :block(checkbox):elem(box) {
-            background: $color-disable; 
+            background: $color-disable;
 
             &:before {
                 display: none;
@@ -147,10 +147,10 @@
         }
 
         &:block(checkbox):mod(checked) :block(checkbox):elem(box) {
-            background: $color-disable-check; 
+            background: $color-disable-check;
 
             &:after {
-                opacity: 0.4;
+                opacity: $checkbox-disabled-checked-opacity;
             }
         }
     }
@@ -161,16 +161,16 @@
 
     &:block(checkbox):mod(type line) {
         &:block(checkbox):mod(size m) {
-            margin-right: 13px;
+            margin-right: $checkbox-line-size-m-marginRight;
         }
 
         &:block(checkbox):mod(size l) {
-            margin-right: 15px;
+            margin-right: $checkbox-line-size-l-marginRight;
         }
 
         &:last-child
         {
-            margin-right: 0;
+            margin-right: $checkbox-line-last-child-marginRight;
         }
     }
 }
