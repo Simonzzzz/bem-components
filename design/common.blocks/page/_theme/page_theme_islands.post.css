@@ -325,4 +325,106 @@ html {
     $popup-boxShadow: 0 0 0 1px; /* Короткая тень у popup */
     $popup-long-boxShadow: 0 10px 20px -5px; /* Длинная тень у popup */
     /* Popup */
+
+
+    /* Progressbar */
+    $progressbar-height: 2px; /* Высота у progressbar */
+    /* /Progressheight */
+
+    /* Radio */
+    $radio-fontFamily: Arial, Helvetica, sans-serif; /* Шрифт у radio */
+
+    $radio-borderRadius: 50%; /* Скругление внешних краев у radio */
+    $radio-before-borderRadius: 50%; /* Скругление внутреннийх краев у radio */
+    $radio-before-space: $radio-border-space; /* Отступ внутренней часта у radio на размер бордера */
+
+    $radio-size-m-fontSize: $size-m; /* Размер текста у m-radio */
+    $radio-size-m-lineHeight: 1.077em; /* Межстрочечный интервал текста у m-radio */
+    $radio-size-m-top: 0.154em; /* Верхний отступ у m-radio */
+    $radio-size-m-width: 1.077em; /* Ширина у m-radio */
+    $radio-size-m-height: 1.077em; /* Высота у m-radio */
+    $radio-size-m-marginRight: 0.385em;/* Правый отступ у m-radio (от текста) */
+
+    $radio-size-m-after: $radio-space-size-m; /* Отступ точки у m-radio 0.308em */
+    $radio-width-m-after: 6px;
+    $radio-height-m-after: 6px;
+
+    $radio-size-l-fontSize: $size-l; /* Размер текста у l-radio */
+    $radio-size-l-lineHeight: 1.133em; /* Межстрочечный интервал текста у l-radio */
+    $radio-size-l-top: 0.200em; /* Верхний отступ у l-radio */
+    $radio-size-l-width: 1.133em; /* Ширина у l-radio */
+    $radio-size-l-height: 1.133em; /* Высота у l-radio */
+    $radio-size-l-marginRight: 0.467em; /* Правый отступ у l-radio (от текста) */
+
+    $radio-size-l-after: $radio-space-size-l; /* Верхний отступ точки у l-radio 0.308em */
+    $radio-width-l-after: 7px;
+    $radio-height-l-after: 7px;
+
+    $radio-checked-after-borderRadius: 50%; /* Скругление внешних краев у radio в чекнутом состоянии */
+    $radio-checked-after-background: $radio-dot-background; /* Цвет точки у чекбокса */
+
+    $radio-focused-boxShadow: 0 0 0 1px; /* Тень (бордер) у radio при фокусе */
+    $radio-focused-inset-boxShadow: 0 0 0 1px; /* Внутренняя тень (бордер) у радио при фокусе */
+
+    $radio-line-size-m-marginRight: 1.000em; /* Внешний правый отступ у m-radio с текстом  */
+    $radio-line-size-l-marginRight: 1.000em; /* Внешний правый отступ у l-radio с текстом  */
+    $radio-line-last-child-marginRight: 0; /* Внешний правый отступ у последнего радио с текстом  */
+    /* /Radio */
+
+    /* Radio-group */
+    $radio-group-size-m-lineHeight: 1.846em; /* Межстрочечный интервал текста у m-radio в списки (расстояние между radio) */
+    $radio-group-size-l-lineHeight: 2.000em; /* Межстрочечный интервал текста у  l-radio в списке  (расстояние между radio) */
+    /* /Radio-group */
+
+    /* Spin */
+    $spin-borderWidth: 2px; /* Ширина бордера у спиннера */
+    /* /Spin*/
+
+    /* Select */
+    $select-button-size-s-paddingRight: 2.077em; /* Внутренний правый отступ у s-slect-button (на ширину иконки стрелки) */
+    $select-button-size-s-icon-width: 2.077em; /* Ширина иконки (стрелки) s-slect-button */
+
+    $select-button-size-m-paddingRight: 2.333em; /* Внутренний правый отступ у m-slect-button (на ширину иконки стрелки) */
+    $select-button-size-m-icon-width: 2.417em; /* Ширина иконки (стрелки) m-slect-button */
+
+    $select-button-size-l-paddingRight: 2.133em; /* Внутренний правый отступ у l-slect-button (на ширину иконки стрелки) */
+    $select-button-size-l-icon-width: 2.200em; /* Ширина иконки (стрелки) у l-slect-button */
+
+    $select-button-size-xl-paddingRight: 2.111em; /* Внутренний правый отступ у xl-slect-button (на ширину иконки стрелки) */
+    $select-button-size-xl-icon-width: 1.833em; /* Ширина иконки (стрелки) у xl-slect-button */
+
+    $select-tick-background: $select-tick;
+    $select-tick-background-hovered: $select-tick-hovered;
+
+    $select-tick-size-s-background: $select-s-tick;
+    $select-tick-size-s-background-hovered: $select-s-tick-hovered;
+    /* /Select */
+
+    /* Menu*/
+    $menu-group-borderWidth: 1px; /* Бордер у menu-group меню */
+
+    $menu-background: alpha(lightness($color-base, 100%), 100%); /* */
+
+    $menu-size-s-fontSize: 0.813em; /* */
+    $menu-size-s-lineHeight: 1.846em; /* */
+    $menu-size-s-vertSpace: 0.231em; /* */
+    $menu-size-s-horSpace: 0.769em; /* */
+
+    $menu-size-m-fontSize: 0.813em; /* */
+    $menu-size-m-lineHeight: 1.846em; /* */
+    $menu-size-m-vertSpace: 0.308em; /* */
+    $menu-size-m-horSpace: 1em; /* */
+
+    $menu-size-l-fontSize: 0.938em; /* */
+    $menu-size-l-lineHeight: 1.867em; /* */
+    $menu-size-l-vertSpace: 0.4em; /* */
+    $menu-size-l-horSpace: 1em; /* */
+
+    $menu-size-xl-fontSize: 0.938em; /* */
+    $menu-size-xl-lineHeight: 2.133em; /* */
+    $menu-size-xl-vertSpace: 0.267em; /* */
+    $menu-size-xl-horSpace: 1.333em; /* */
+
+    $menu-item-link-after-space: 0px; /* Отступ кликабельной области у menu-item-link в списке */ /*Не нашёл куда воткнуть!!!!!!!!!!!!!!!!!*/
+    /* /Menu */
 }

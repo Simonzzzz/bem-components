@@ -7,8 +7,7 @@
 
     box-sizing: border-box;
 
-    $borderWidth: 2px;
-    border: $borderWidth solid transparent;
+    border: $spin-borderWidth solid transparent;
     border-radius: 50%;
 
     &:after {
@@ -30,7 +29,7 @@
         backface-visibility: hidden; /* Accelerate animation */
     }
 
-    $bgShift: -$borderWidth;
+    $bgShift: -($spin-borderWidth);
 
     @each $size, $val in
     (xs,   s,     m,     l,     xl),  /* size */
@@ -41,7 +40,7 @@
             width: $val;
             height: $val;
 
-            background-position: -$(borderWidth) $bgShift;
+            background-position: -($spin-borderWidth) $bgShift;
         }
 
         $bgShift: calc($bgShift - ($val + 1));
