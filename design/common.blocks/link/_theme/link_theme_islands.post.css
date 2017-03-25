@@ -3,8 +3,8 @@
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: $color-link;
     cursor: pointer;
-    transition: color 0.15s ease-out;
-    text-decoration: none;
+    transition: $link-transition;
+    text-decoration: $link-textDecoration;
 
     -webkit-tap-highlight-color: $color-link-hover;
 
@@ -35,7 +35,7 @@
         color: $color-link-hover;
     }
 
-    @each $size, $val in (s, m, l, xl), (13px, 13px, 15px, 18px) {
+    @each $size, $val in (s, m, l, xl), ($link-size-s, $link-size-m, $link-size-l, $link-size-xl) {
         &:block(link):mod(size $size) {
             font-size: $val;
         }

@@ -262,8 +262,8 @@ html {
     $input-size-xl-clear-height: 2.462em; /* Высота отчищающего блока (с крестиком) у xl-input */
 
 
-		$input-size-l-xl-clear-width: 2.133em; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Новый класс l-xl*/
-		$input-size-l-xl-clear-height: 2.133em; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Новый класс l-xl*/
+    $input-size-l-xl-clear-width: 2.133em; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Новый класс l-xl*/
+    $input-size-l-xl-clear-height: 2.133em; /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Новый класс l-xl*/
 
 
     $input-size-s-fontSize: $size-s; /* Тень у фокуснутого s-input */
@@ -298,4 +298,14 @@ html {
     $control-group-input-focused-before-right: 1px;  /* Правый отступ внутренней части контролла в control-group при фокусе */
     $control-group-last-child-right: 1px; /* Правый оступ у последнего контрола в control-group */
     /* /Input */
+
+    /* Link */
+    $link-textDecoration: underline; /* Подчеркивание у link */
+    $link-transition: color 0.15s ease-out; /* Анимация у link */
+
+    $link-size-s: 0.813em; /* Размер текста у s-link */
+    $link-size-m: 0.813em; /* Размер текста у m-link */
+    $link-size-l: 0.938em; /* Размер текста у l-link */
+    $link-size-xl: 1.125em; /* Размер текста у xl-link */
+  /* /Link */
 }
